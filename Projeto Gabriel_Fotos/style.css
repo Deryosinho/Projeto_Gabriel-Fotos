@@ -1,0 +1,224 @@
+/* Resete de configs */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+} 
+
+a {
+    text-decoration: none;
+}
+
+ul,ol, li  {
+    list-style: none;
+}
+
+body {
+    background-color: whitesmoke;
+    height: auto;
+}
+
+/* Cabeçalho */
+
+#container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #201d1d;
+    padding: 30px 0px;
+    box-shadow: 2px 1px 5px black;   
+}
+
+.header a {
+    color: whitesmoke;
+    margin: 5px;
+    padding: 5px;
+}
+#titulo {
+    display: flex;
+}
+
+#titulo h1 a {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    font-weight: bold;
+}
+
+/* Imagem do header */
+
+#img-logo  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#img-logo  img {
+    border: 1rem solid #201d1d ;
+    border-radius: 200px;
+    width: 15%;
+    position: absolute;
+    top: -80px;  
+}
+
+/* Barra de navegação */
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80px ;
+}
+
+#nav-bar li {
+    display: inline-block;
+}
+
+#nav-bar a {
+    font-size: clamp(11px,2vw,1.1rem);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#nav-bar a:hover {
+    color: rgb(97, 97, 97) ;
+}
+
+/* Corpo conteudo */
+
+/* Carrossel */
+
+.carrossel {
+    background-color: #201d1d;
+    margin: auto;
+    margin-top: 12%;
+    width: 65%vw;
+    border: 5px solid rgb(0, 0, 0);
+    height: 70vh;
+}
+
+.galery {
+    width: 65%;
+    height: clamp(10vh,50vh,360px);
+    overflow: hidden; 
+    margin: auto; 
+    height: 68vh;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+   width: 19.9% ;
+   height: clamp(30px,50vh,360px);
+   height: 100vh;
+}
+
+@keyframes animacao {
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0; }
+    25%{ margin-left: -100%; }
+    45%{ margin-left: -100%; }
+    50%{ margin-left: -200%; }
+    70%{ margin-left: -200%; }
+    75%{ margin-left: -301%; }
+    95%{ margin-left: -301%; }
+    100%{ margin-left: -400%; }
+}
+/* Corpo */
+.corpo h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #201d1d;
+    color: whitesmoke;
+}
+
+/* Catálogo */
+
+.catalogo {
+    margin-top: 50px;  
+}
+
+.catalogo h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    color: #201d1d;
+    text-shadow: 1px 1px 2px black;
+}
+
+.catalogo img {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 1%;
+    background-color: #201d1d;
+}
+
+ .individual, .casamento, .aniversario {
+    background-color: rgb(97, 97, 97);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Rodapè */
+
+.rodape  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    background-color: #201d1d;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Página sobre */
+
+.sobre, .contato {
+    margin: 150px 0px 100px 0px;
+    background-color: #201d1d;
+    padding: 10%;
+    color: whitesmoke;
+}
+
+.sobre h2, .contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sobre p, .contato p{
+    font-size: 1.1em;
+    margin: 20px 10px;
+}
+
+.contato a {
+    color: #58F16E;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.contato img {
+    width: 30px;
+    height: 30px;
+    margin: -9px 0px;
+}
+
+.contato .text-insta {
+    color: #FF008A;
+}
